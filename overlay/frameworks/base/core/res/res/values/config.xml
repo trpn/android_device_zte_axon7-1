@@ -218,6 +218,11 @@
          Must be in the range specified by minimum and maximum. -->
     <integer name="config_screenBrightnessSettingDefault">98</integer>
 
+    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+         manually by the user. Off by default, since the expected haptic feedback may not be
+         available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
+
     <!-- Default screen brightness for VR setting. Default value: 0x56 => 86. -->
     <integer name="config_screenBrightnessForVrSettingDefault">86</integer>
 
