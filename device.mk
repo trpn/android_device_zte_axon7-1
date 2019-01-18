@@ -186,13 +186,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     qdcm_calib_data_zteSAM_S6E3HA3_SAM_25601440_5P5Inch.xml
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    ZteDoze
-
-# Flip Cover App
-PRODUCT_PACKAGES += \
-    FlipFlap
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -298,7 +291,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net \
-    netutils-wrapper-1.0
+    netutils-wrapper-1.0 \
+    librmnetctl
 
 # NFC
 PRODUCT_PACKAGES += \
