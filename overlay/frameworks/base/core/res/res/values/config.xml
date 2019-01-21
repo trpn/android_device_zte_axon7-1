@@ -20,6 +20,17 @@
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
+    <!-- Default color for notification LED is green. -->
+    <color name="config_defaultNotificationColor">#ff008000</color>
+
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option  -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
+
+    <bool name="config_multiColorNotificationLed">true</bool>
+
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
@@ -501,5 +512,12 @@
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+
+    <!-- Custom ROM settings -->
+    <bool name="config_enableSmartPixels">true</bool>
+    <integer name="config_deviceHardwareKeys">83</integer>
 
 </resources>
