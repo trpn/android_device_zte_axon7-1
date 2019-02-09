@@ -1,5 +1,6 @@
-allow hal_nfc_default nfc_data_file:dir { search getattr };
+# Data file accesses.
+allow hal_nfc_default nfc_vendor_data_file:dir create_dir_perms;
+allow hal_nfc_default nfc_vendor_data_file:file create_file_perms;
 
-allow hal_nfc_default nfc_data_file:file { rw_file_perms };
-allow hal_nfc_default nfc_vendor_data_file:dir { search write add_name };
-allow hal_nfc_default nfc_vendor_data_file:file create;
+dontaudit hal_nfc_default nxpnfc_hwservice:hwservice_manager add;
+
