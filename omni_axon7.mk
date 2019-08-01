@@ -27,8 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # must be before including omni part
 TARGET_BOOTANIMATION_SIZE := 1080p
 
-DEVICE_PACKAGE_OVERLAYS += device/zte/axon7/overlay/common
-DEVICE_PACKAGE_OVERLAYS += device/zte/axon7/overlay/device
+DEVICE_PACKAGE_OVERLAYS += device/zte/axon7/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 # Inherit some common Omni stuff.
