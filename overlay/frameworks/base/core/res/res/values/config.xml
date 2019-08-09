@@ -503,7 +503,6 @@
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- AOD & Doze settings -->
-    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
     <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
 
