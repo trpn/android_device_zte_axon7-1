@@ -1,1 +1,2 @@
 allow domain debugfs:dir { search };
+allow domain debugfs:file { read };
