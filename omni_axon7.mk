@@ -17,20 +17,27 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Get the prebuilt list of APNs
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-# Inherit from ailsa_ii device
-$(call inherit-product, device/zte/axon7/device.mk)
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+#treble
+#$(call inherit-product, build/make/target/product/treble_common_64.mk)
 
 # must be before including omni part
 TARGET_BOOTANIMATION_SIZE := 1080p
+
+DEVICE_PACKAGE_OVERLAYS += device/zte/axon7/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
+
+# Inherit from ailsa_ii device
+$(call inherit-product, device/zte/axon7/device.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := omni_axon7
@@ -45,7 +52,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="P996A01_O-user 8.0.0 OPR1.170623.032 28 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/marlin/marlin:9/PQ3A.190705.001/5565753:user/release-keys
+BUILD_FINGERPRINT=OnePlus/OnePlus6/OnePlus6:9/PKQ1.180716.001/1905281230:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-zte
 
