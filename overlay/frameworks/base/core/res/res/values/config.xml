@@ -505,6 +505,7 @@
     <!-- AOD & Doze settings -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
     <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+    <integer name="config_screen_off_delay">0</integer>    
 
     <!-- Custom ROM settings -->
     <bool name="config_enableSmartPixels">true</bool>
