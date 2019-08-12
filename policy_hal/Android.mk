@@ -80,4 +80,3 @@ LOCAL_MODULE := libaudiopolicymanager
 include $(BUILD_SHARED_LIBRARY)
 
 endif
-endif
