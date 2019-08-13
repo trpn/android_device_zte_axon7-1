@@ -138,7 +138,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # CM Hardware
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/wake_gesture"
+#TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/wake_gesture"
 
 # CNE and DPM
 BOARD_USES_QCNE := true
