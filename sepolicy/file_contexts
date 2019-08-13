@@ -29,5 +29,3 @@
 # USB
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.axon7       u:object_r:hal_usb_default_exec:s0
 
-# DT2W
-/proc/touchscreen/wake_gesture    u:object_r:proc_touchpanel:s0
