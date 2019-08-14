@@ -1,21 +1,15 @@
 [
   {
     "remote": "baddar90",
-    "repository": "android_kernel_zte_msm8996",
+    "repository": "caf_kernel_zte_msm8996",
     "target_path": "kernel/zte/axon7",
-    "revision": "lineage-16.0"
+    "revision": "axon7-stable"
   },
   {
     "remote": "baddar90",
-    "repository": "ahttps://github.com/baddar90/proprietary_vendor_zte-1",
+    "repository": "proprietary_vendor_zte-1",
     "target_path": "vendor/zte",
-    "revision": "test"
-  },
-  {
-    "remote": "baddar90",
-    "repository": "ahttps://github.com/baddar90/proprietary_vendor_zte-1",
-    "target_path": "vendor/zte",
-    "revision": "test"
+    "revision": "omni"
   },
   {
     "remote": "omnirom",
@@ -33,18 +27,6 @@
     "remote": "omnirom",
     "repository": "android_external_ant-wireless_antradio-library",
     "target_path": "external/ant-wireless/antradio-library",
-    "revision": "android-9.0"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_external_ant-wireless_ant_service",
-    "target_path": "external/ant-wireless/ant_service",
-    "revision": "android-9.0"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_external_ant-wireless_ant_native",
-    "target_path": "external/ant-wireless/ant_native",
     "revision": "android-9.0"
   },
   {
@@ -69,6 +51,12 @@
 	"remote": "omnirom",
     "repository": "android_vendor_qcom_opensource_commonsys",
     "target_path": "vendor/qcom/opensource/commonsys",
+    "revision": "android-9.0"
+  },
+  {
+	"remote": "omnirom",
+    "repository": "android_vendor_qcom_opensource_audio",
+    "target_path": "vendor/qcom/opensource/audio",
     "revision": "android-9.0"
   }
 ]
