@@ -179,6 +179,9 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     qdcm_calib_data_zteSAM_S6E3HA3_SAM_25601440_5P5Inch.xml
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    ZteDoze
 
 # DRM
 PRODUCT_PACKAGES += \
