@@ -15,35 +15,29 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-#treble
-#$(call inherit-product, build/make/target/product/treble_common_64.mk)
-
-# must be before including omni part
-TARGET_BOOTANIMATION_SIZE := 1080p
+# Inherit some common SkyDragon stuff.
+$(call inherit-product, vendor/skydragon/config/common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/zte/axon7/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-
 # Inherit from ailsa_ii device
 $(call inherit-product, device/zte/axon7/device.mk)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := omni_axon7
+PRODUCT_NAME := skydragon_axon7
 PRODUCT_DEVICE := axon7
 PRODUCT_BRAND := ZTE
-PRODUCT_MODEL := ZTE A2017U
+PRODUCT_MODEL := ZTE A2017X
 PRODUCT_MANUFACTURER := ZTE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -55,5 +49,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT=OnePlus/OnePlus6/OnePlus6:9/PKQ1.180716.001/1905281230:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-zte
-
-ALLOW_MISSING_DEPENDENCIES := true
