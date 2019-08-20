@@ -381,7 +381,7 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.1-service-qti
+    android.hardware.usb@1.1-service-axon7
 
 # VNDK
 PRODUCT_PACKAGES += \

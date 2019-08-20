@@ -1,7 +1,7 @@
-service vendor.usb-hal-1-1 /vendor/bin/hw/android.hardware.usb@1.1-service-qti
+service vendor.usb-hal-1-1 /vendor/bin/hw/android.hardware.usb@1.1-service.axon7
     class hal
     user root
-    group root system mtp
+    group root system shell mtp
 
 on boot
     chown root system /sys/class/typec/port0/power_role
@@ -10,4 +10,3 @@ on boot
     chmod 664 /sys/class/typec/port0/power_role
     chmod 664 /sys/class/typec/port0/data_role
     chmod 664 /sys/class/typec/port0/port_type
-

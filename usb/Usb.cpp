@@ -1,7 +1,4 @@
 /*
- * Copyright (C) 2019, The Linux Foundation. All rights reserved.
- * Not a Contribution.
- *
  * Copyright (C) 2017 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.usb@1.1-service-qti"
+#define LOG_TAG "android.hardware.usb@1.1-service.axon7"
 
 #include <android-base/logging.h>
 #include <assert.h>
@@ -669,7 +666,7 @@ void *work(void *param) {
 
     for (int n = 0; n < nevents; ++n) {
       if (events[n].data.ptr)
-        (*(void (*)(uint32_t, struct data *payload))events[n].data.ptr)(
+        (*(void (*)(int, struct data *payload))events[n].data.ptr)(
             events[n].events, &payload);
     }
   }

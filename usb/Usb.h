@@ -64,10 +64,9 @@ struct Usb : public IUsb {
 };
 
 }  // namespace implementation
-}  // namespace V1_1
+}  // namespace V1_0
 }  // namespace usb
 }  // namespace hardware
 }  // namespace android
 
 #endif  // ANDROID_HARDWARE_USB_V1_1_USB_H
-

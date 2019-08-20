@@ -1,7 +1,4 @@
 /*
- * Copyright (C) 2018, The Linux Foundation. All rights reserved.
- * Not a Contribution.
- *
  * Copyright (C) 2018 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,6 +23,7 @@
 #include <android/hardware/usb/gadget/1.0/IUsbGadget.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
+#include <string>
 #include <sys/epoll.h>
 #include <sys/eventfd.h>
 #include <thread>
@@ -46,7 +44,6 @@ using ::android::base::GetProperty;
 using ::android::base::SetProperty;
 using ::android::base::unique_fd;
 using ::android::base::WriteStringToFile;
-using ::android::base::ReadFileToString;
 using ::android::hardware::hidl_array;
 using ::android::hardware::hidl_memory;
 using ::android::hardware::hidl_string;
@@ -101,4 +98,4 @@ struct UsbGadget : public IUsbGadget {
 }  // namespace hardware
 }  // namespace android
 
-#endif  // ANDROID_HARDWARE_USB_V1_0_USBGADGET_H
+#endif  // ANDROID_HARDWARE_USB_V1_2_USBGADGET_H

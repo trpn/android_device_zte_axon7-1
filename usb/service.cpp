@@ -1,7 +1,4 @@
 /*
- * Copyright (C) 2018, The Linux Foundation. All rights reserved.
- * Not a Contribution.
- *
  * Copyright (C) 2016 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,14 +14,13 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.usb@1.1-service-qti"
+#define LOG_TAG "android.hardware.usb@1.1-service.axon7"
 
 #include <hidl/HidlTransportSupport.h>
 #include "Usb.h"
 #include "UsbGadget.h"
 
 using android::sp;
-using android::base::GetBoolProperty;
 
 // libhwbinder:
 using android::hardware::configureRpcThreadpool;
@@ -32,8 +28,8 @@ using android::hardware::joinRpcThreadpool;
 
 // Generated HIDL files
 using android::hardware::usb::V1_1::IUsb;
-using android::hardware::usb::V1_1::implementation::Usb;
 using android::hardware::usb::gadget::V1_0::IUsbGadget;
+using android::hardware::usb::V1_1::implementation::Usb;
 using android::hardware::usb::gadget::V1_0::implementation::UsbGadget;
 
 using android::OK;
@@ -51,21 +47,16 @@ int main() {
     return 1;
   }
 
-  if (GetBoolProperty("ro.vendor.usb.use_gadget_hal", false)) {
-    status = service2->registerAsService();
+  status = service2->registerAsService();
 
-    if (status != OK) {
-      ALOGE("Cannot register USB Gadget HAL service");
-      return 1;
-    }
-
-  } else {
-    ALOGE("USB Gadget HAL not used");
+  if (status != OK) {
+    ALOGE("Cannot register USB Gadget HAL service");
+    return 1;
   }
 
-  ALOGI("QTI USB HAL Ready.");
+  ALOGI("USB HAL Ready.");
   joinRpcThreadpool();
-  // Under normal cases, execution will not reach this line.
-  ALOGI("QTI USB HAL failed to join thread pool.");
+  // Under noraml cases, execution will not reach this line.
+  ALOGI("USB HAL failed to join thread pool.");
   return 1;
 }
