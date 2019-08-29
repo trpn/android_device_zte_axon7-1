@@ -188,7 +188,7 @@ PRODUCT_PACKAGES += \
 
 # Doze mode
 PRODUCT_PACKAGES += \
-    ZteDoze
+    CustomDoze
 
 # Flip Cover App
 PRODUCT_PACKAGES += \
