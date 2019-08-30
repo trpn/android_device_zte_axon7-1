@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_axon7.mk
+    $(LOCAL_DIR)/wave_axon7.mk
