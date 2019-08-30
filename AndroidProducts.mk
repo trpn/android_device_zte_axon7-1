@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_axon7.mk
+    $(LOCAL_DIR)/syberia_axon7.mk
