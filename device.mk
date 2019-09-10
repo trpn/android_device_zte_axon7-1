@@ -370,6 +370,7 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
+    android.hardware.secure_element@1.0 \
     librmnetctl \
     libxml2
 
