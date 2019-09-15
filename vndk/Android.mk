@@ -1,6 +1,42 @@
 ifeq ($(BOARD_VNDK_VERSION),)
 $(warning ************* BOARD VNDK is not enabled - compiling vndk-sp ***************************)
-LOCAL_PATH := $(call my-dir)
+VNDK_SP_LIBRARIES := \
+    android.hardware.graphics.mapper@2.0 \
+    android.hardware.graphics.mapper@2.1 \
+    android.hardware.graphics.mapper@3.0 \
+    android.hardware.graphics.common@1.0 \
+    android.hardware.graphics.common@1.1 \
+    android.hardware.graphics.common@1.2 \
+    android.hardware.renderscript@1.0 \
+    android.hidl.memory@1.0 \
+    android.hidl.memory.token@1.0 \
+    android.hidl.safe_union@1.0 \
+    libRSCpuRef \
+    libRSDriver \
+    libRS_internal \
+    libbacktrace \
+    libbase \
+    libbcinfo \
+    libbinderthreadstate \
+    libblas \
+    libc++ \
+    libcompiler_rt \
+    libcutils \
+    libhardware \
+    libhidlbase \
+    libhidlmemory \
+    libhidltransport \
+    libhwbinder_noltopgo \
+    libhwbinder \
+    libion \
+    libjsoncpp \
+    liblzma \
+    libprocessgroup \
+    libunwind \
+    libunwindstack \
+    libutils \
+    libutilscallstack \
+    libz
 
 include $(LOCAL_PATH)/vndk-sp-libs.mk
 
@@ -10,7 +46,7 @@ define define-vndk-sp-lib
 include $$(CLEAR_VARS)
 LOCAL_MODULE := $1.vndk-sp-gen
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_PREBUILT_MODULE_FILE := $$(TARGET_OUT_INTERMEDIATE_LIBRARIES)/$1.so
+LOCAL_PREBUILT_MODULE_FILE := $$(call intermediates-dir-for,SHARED_LIBRARIES,$1)/$1.so
 LOCAL_STRIP_MODULE := false
 LOCAL_MULTILIB := first
 LOCAL_MODULE_TAGS := optional
@@ -24,7 +60,7 @@ ifneq ($$(TARGET_TRANSLATE_2ND_ARCH),true)
 include $$(CLEAR_VARS)
 LOCAL_MODULE := $1.vndk-sp-gen
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_PREBUILT_MODULE_FILE := $$($$(TARGET_2ND_ARCH_VAR_PREFIX)TARGET_OUT_INTERMEDIATE_LIBRARIES)/$1.so
+LOCAL_PREBUILT_MODULE_FILE := $$(call intermediates-dir-for,SHARED_LIBRARIES,$1,,,$(TARGET_2ND_ARCH_VAR_PREFIX))/$1.so
 LOCAL_STRIP_MODULE := false
 LOCAL_MULTILIB := 32
 LOCAL_MODULE_TAGS := optional
@@ -37,7 +73,16 @@ endif # TARGET_2ND_ARCH is not empty
 endef
 
 $(foreach lib,$(VNDK_SP_LIBRARIES),\
-    $(eval $(call define-vndk-sp-lib,$(lib))))
+    $(eval $(call define-vndk-lib,$(lib),vndk-sp-gen,vndk-sp-29,)))
+$(foreach lib,$(VNDK_SP_EXT_LIBRARIES),\
+    $(eval $(call define-vndk-lib,$(lib),vndk-sp-ext-gen,vndk-sp,true)))
+$(foreach lib,$(EXTRA_VENDOR_LIBRARIES),\
+    $(eval $(call define-vndk-lib,$(lib),vndk-ext-gen,,true)))
+
+
+#-------------------------------------------------------------------------------
+# Phony Package
+#-------------------------------------------------------------------------------
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := vndk-sp
