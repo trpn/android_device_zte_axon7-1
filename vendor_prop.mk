@@ -159,18 +159,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_cdma_sub=0 \
     ro.telephony.default_network=10,10
 
-# RmNet Data
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.df.agg.dl_pkt=10 \
-    persist.data.df.agg.dl_size=4096 \
-    persist.data.df.dev_name=rmnet_usb0 \
-    persist.data.df.dl_mode=5 \
-    persist.data.df.iwlan_mux=9 \
-    persist.data.df.mux_count=8 \
-    persist.data.df.ul_mode=5 \
-    persist.data.wda.enable=true \
-    persist.rmnet.data.enable=true
-
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.dev_ori=false \
