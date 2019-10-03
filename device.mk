@@ -155,6 +155,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
