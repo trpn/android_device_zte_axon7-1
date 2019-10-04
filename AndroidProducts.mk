@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_axon7.mk
+    $(LOCAL_DIR)/liquid_axon7.mk
+
+COMMON_LUNCH_CHOICES := \
+    liquid_axon7-eng \
+    liquid_axon7-userdebug \
+    liquid_axon7-user
