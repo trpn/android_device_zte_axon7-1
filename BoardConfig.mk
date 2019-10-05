@@ -228,11 +228,6 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/temp
 BUILD_BROKEN_DUP_RULES := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system/lib/libui.so|libui_shim.so \
-    /system/lib64/libui.so|libui_shim.so
-
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
