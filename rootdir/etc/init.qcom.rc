@@ -580,10 +580,6 @@ service ppd /vendor/bin/mm-pp-dpps
     group system graphics
     socket pps stream 0660 system system
 
-on property:init.svc.surfaceflinger=restarting
-    stop vendor.hwcomposer-2-1
-    start vendor.hwcomposer-2-1
-
 on property:slpi.restart=1
     write /sys/kernel/debug/msm_subsys/slpi restart
 
