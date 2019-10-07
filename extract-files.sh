@@ -98,4 +98,13 @@ patchelf --replace-needed android.hardware.gnss@1.0.so android.hardware.gnss@1.0
 CAMERA_SHIM="$BLOB_ROOT"/vendor/lib/libFNVfbEngineHAL.so
 patchelf --add-needed libshim_camera.so "$CAMERA_SHIM"
 
+#  Make QTI BT HAL load with VNDK 28 libbase
+function blob_fixup() {
+    case "${1}" in
+    vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so)
+        patchelf --replace-needed "libbase.so" "libbase-v28.so" "${2}"
+        ;;
+    esac
+}
+
 "$MY_DIR"/setup-makefiles.sh
