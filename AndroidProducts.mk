@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_axon7.mk
+    $(LOCAL_DIR)/arrow_axon7.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_axon7-eng \
-    lineage_axon7-userdebug \
-    lineage_axon7-user
+    arrow_axon7-eng \
+    arrow_axon7-userdebug \
+    arrow_axon7-user
