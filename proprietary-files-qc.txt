@@ -530,16 +530,18 @@ vendor/lib/lib-uceservice.so|9dc40ac9b5a8e23190087824c8c6d904594f9da8
 vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so|3373ec7a4f3b81e028a530c882c6ff8c6cf39639
 vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so|3a46de102fb4b7634a2cfc61d5171eab7833227d
 
-# Sensors - from op3 - PKQ1.181203.001
-vendor/bin/sensors.qti|116403d330d6e1247cd5464261c1b06f12f86369
-vendor/lib/hw/activity_recognition.msm8996.so|6bec19a06f59abca3d43cd6a83c88fbe9daea7f6
-vendor/lib/libsensor1.so|de27fcd2ab95788e09310c5f2cf58a0540afcfe3
-vendor/lib/libsensor_reg.so|9a3568dc423598886b7f16d91d76e53cd0220387
-vendor/lib/sensors.ssc.so|2b7c1996cc12e6fac7d1fa09c5dfe1c93a1311d9
-vendor/lib64/hw/activity_recognition.msm8996.so|64901bc837ed32dee28bbff9a60df7d8ac5cd140
-vendor/lib64/libsensor1.so|f8524d62d2ad52849f4a13b018baf08d0eac8180
-vendor/lib64/libsensor_reg.so|8ca48358abf3f8f84f86036b02dbb210a5870742
-vendor/lib64/sensors.ssc.so|f4108878f452ff445bfee7d6f624e350353469
+# Sensors  - from LA.UM.7.5.r1-05300-8x96.0
+vendor/bin/sensors.qti|e66234a6836c1337dbd81556b6e454db81e699dc
+vendor/lib64/hw/activity_recognition.msm8996.so|c29a0dfff27824dac39a21f56a92bf319acb051b
+vendor/lib64/libsensor1.so|1934268e2f28ee9d705d5ff060544d06e42afcc3
+vendor/lib64/libsensor_reg.so|942fbf9ef1cfc87596f850e7ff1a86e7a9ddc846
+vendor/lib64/libsensor_user_cal.so|72e96e0604cf967d3d70e1b066da6f655d52ac38
+vendor/lib64/sensors.ssc.so|e49e3c585da09b323948e1c1201118d426f3d558
+vendor/lib/hw/activity_recognition.msm8996.so|58878fbcf8e98a8f053c3d1fbaa1beb4d7776d12
+vendor/lib/libsensor1.so|d73573eca4e1eaf52f09f9cc7292cdc6d9d69c70
+vendor/lib/libsensor_reg.so|2d95cea1df93dcaae0f067157f6932c1381dec53
+vendor/lib/libsensor_user_cal.so|c4dc36b5995781ad1a69d3b935e0a5bd98cc6d2f
+vendor/lib/sensors.ssc.so|96a37b515969d72875debd9ee0a505406d75bd3c5
 
 # Thermal - from LA.UM.7.5.r1-05300-8x96.0
 vendor/bin/thermal-engine|61f954e68514aedeede9cca90cc70b5cd4736e02
