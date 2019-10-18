@@ -290,11 +290,11 @@ vendor/bin/hvdcp_opti
 vendor/lib64/hw/keystore.msm8996.so|58195df09c1bc95c3e54d5594c13c83fdf54ad47
 vendor/lib/hw/keystore.msm8996.so|a8de2add9c6e90765a83e15dcdb9abacb015fb3d
 
-# Listen - from op3 - OPR6.170623.013
-vendor/lib64/hw/sound_trigger.primary.msm8996.so|d81639f09364ff39a1132f7ee8497a13aa1bd988
-vendor/lib/hw/sound_trigger.primary.msm8996.so|82906637605944c0dea3de007bd3ad063b610cd0
-vendor/lib/libadpcmdec.so|cce776b6e1edac56705b155444c3f28362055442
-vendor/lib/libsmwrapper.so|cd54c73eaafbe3fe9eacafc845a04d25e44fe553
+# Listen - from LA.UM.7.5.r1-05300-8x96.0
+vendor/lib64/hw/sound_trigger.primary.msm8996.so|b38353410e33fe4fdb5936ce140442f1b1056231
+vendor/lib/hw/sound_trigger.primary.msm8996.so|52ba9836ceb42b5bdf35785f40701391dfaa7051
+vendor/lib/libadpcmdec.so|eeaef8dd6cad3da613860bb263f192cda56c60b6
+vendor/lib/libsmwrapper.so|3926c3928c7276f34dd851798552f7433e86bbf5
 
 # Media - from LA.UM.8.6.r1-01900-89xx.0
 lib/extractors/libmmparserextractor.so|41d5ee2c7f76f21f7566956ad0a490f6927c2f95
