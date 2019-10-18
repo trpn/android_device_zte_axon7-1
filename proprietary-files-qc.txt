@@ -40,28 +40,17 @@ lib/com.qualcomm.qti.ant@1.0.so|fcd6a7130c480bfe4e4d9cc00702ed8444cddc82
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
 
-# Audio
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
--vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libqtigef.so
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
--vendor/lib/libaudio_log_utils.so
-vendor/lib/libqtigef.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
+# Audio - from LA.UM.7.5.r1-05300-8x96.0
+vendor/lib/soundfx/libqcbassboost.so|4daf39244387e81665597a9b609882b743ff7472
+vendor/lib/soundfx/libqcreverb.so|95585076f5069f14cc30d81b5b802dbb5e65ab97
+vendor/lib/soundfx/libqcvirt.so|7f859d06de66960f127d141fadc80151b249d42f
+vendor/lib/libacdb-fts.so|4f86d94582dd5134dbcf7b23e3963a5f3e0a680a
+vendor/lib/libacdbloader.so|b81b446a1f7309993846822199a4b9b0e307e0db
+vendor/lib/libacdbrtac.so|4ca5d96caf61eb2b4967d1dd3dfde78a19bfbf21
+vendor/lib/libadiertac.so|f8776c34269c49f87840a3ec5ef6141a11b016b8
+vendor/lib/libadm.so|bd574dd1f10937386df3626e2ed9d4de7d5d8ba3
+vendor/lib/libaudcal.so|b6b55c953af4af971dfe47d94f0da2ac6041b9c1
+vendor/lib/libqtigef.so|784fcf30bcb94db37c67ea5c8cbc93c8c4a19c2c
 
 # Bluetooth - from LA.UM.7.5.r1-05300-8x96.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|70d45813c07050fc19969db8a1dcef32432ce62e 
