@@ -228,9 +228,8 @@ VENDOR_SECURITY_PATCH := 2018-07-01
 #BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := libinit_msm8996
+TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_msm8996
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8996
->>>>>>> 3f79269... msm8996-common: Go permissive and disable device sepolicy:BoardConfigCommon.mk
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
