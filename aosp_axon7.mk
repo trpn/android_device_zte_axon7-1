@@ -30,9 +30,6 @@ TARGET_GAPPS_ARCH := arm64
 # Set bootanimation
 TARGET_BOOT_ANIMATION_RES := 1440
 
-# Set build type
-CUSTOM_BUILD_TYPE := OFFICIAL
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_axon7
 PRODUCT_DEVICE := axon7
