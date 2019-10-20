@@ -17,6 +17,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_axon7.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_axon7-userdebug
-    aosp_axon7-eng
-    aosp_axon7-user
+    aosp_axon7-eng \
+    aosp_axon7-user \
+    aosp_axon7-userdebug \
