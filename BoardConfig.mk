@@ -220,6 +220,7 @@ VENDOR_SECURITY_PATCH := 2018-07-01
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
