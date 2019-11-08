@@ -185,6 +185,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pmd=false \
     ro.vendor.sensors.sta_detect=false
 
+# SurfaceFlinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.protected_contents=true
+
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true \
