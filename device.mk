@@ -382,7 +382,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librmnetctl \
-    libxml2
+    libxml2 \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
