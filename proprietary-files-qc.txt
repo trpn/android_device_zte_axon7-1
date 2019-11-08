@@ -450,6 +450,10 @@ vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so|0cdbe320f9ab6ee034754cb2c
 vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so|128bc67f4822e6715ad64c9648f412cf3e3dc23e
 vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so|7a8567a10b7913957522c9e583069cdc606ac564
 vendor/radio/qcril_database/qcril.db|57152221f3e51e4caa6305236ca0e1bfb75ebc98
+vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
+vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
+vendor/etc/init/netmgrd.rc|fd3457c69a9fab11b87d0d1b494188fe089684cd
+vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
 
 # IMS - from fujisan - OPM1.171019.026
 # ims.apk - from daisy - PKQ1.180917.001
