@@ -65,6 +65,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     ro.use_data_netmgrd=true
 
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.image-dex2oat-filter=speed \
+    dalvik.vm.heapstartsize=16m \
+    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=4m \
+    dalvik.vm.heapmaxfree=8m \
+    ro.sys.fw.dex2oat_thread_count=8
+
 # Display (Qualcomm AD)
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
@@ -141,6 +153,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.hw_mbn_update=0 \
+    persist.vendor.radio.jbims=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sap_silent_pin=true \
     persist.vendor.radio.sib16_support=1 \
@@ -174,6 +187,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.delta_time.enable=true \
     persist.timed.enable=true
 
 # USB debugging
