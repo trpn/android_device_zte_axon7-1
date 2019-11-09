@@ -221,7 +221,7 @@ VENDOR_SECURITY_PATCH := 2018-07-01
 # SELinux
 #include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
-#BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/temp
 
 # NEVER ALLOW
 SELINUX_IGNORE_NEVERALLOWS := true
