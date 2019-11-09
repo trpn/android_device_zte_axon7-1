@@ -94,4 +94,8 @@ done
 
 patchelf --replace-needed android.hardware.gnss@1.0.so android.hardware.gnss@1.0-v27.so $BLOB_ROOT/vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 
+# Load camera.msm8996.so shim
+CAM_MSM8996="$BLOB_ROOT"/vendor/lib/libFNVfbEngineHAL.so
+patchelf --add-needed camera.msm8996_shim.so "$CAM_MSM8996"
+
 "$MY_DIR"/setup-makefiles.sh
