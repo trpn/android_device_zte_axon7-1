@@ -244,7 +244,7 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common_system
+    ims-ext-common_system \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
