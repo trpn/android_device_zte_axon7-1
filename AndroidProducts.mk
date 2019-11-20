@@ -18,5 +18,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     arrow_axon7-eng \
-    aosp_axon7-user \
-    aosp_axon7-userdebug \
+    arrow_axon7-user \
+    arrow_axon7-userdebug \
