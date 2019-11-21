@@ -366,6 +366,13 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|df138b77fb116a1a786a70c9c76b69d61b5c04d2
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|5761eae471e8dcd94ce139e831a1aa5b23f133c6
 
+QSEECOMD dependencies
+vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libspl.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
 # QMI - from fujisan - OPM1.171019.026
 etc/permissions/qti_libpermissions.xml:vendor/etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml:vendor/etc/permissions/qti_permissions.xml
