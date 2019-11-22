@@ -149,6 +149,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sap_silent_pin=true \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.sw_mbn_update=0 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ril.subscription.types=NV,RUIM \
     ro.carrier.openmarket=true \
