@@ -376,17 +376,6 @@ on property:vold.decrypt=trigger_restart_framework
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
-service vendor.cnd /vendor/bin/cnd
-    class main
-    user system
-    group system wifi inet radio wakelock net_admin
-    writepid /dev/cpuset/system-background/tasks
-
-service dpmQmiMgr /vendor/bin/dpmQmiMgr
-    class main
-    user system
-    group radio system
-
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
@@ -421,24 +410,6 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
     user system
     group system radio
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.netmgrd /vendor/bin/netmgrd
-    class main
-    user root
-    group root wifi wakelock radio inet
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.ipacm /vendor/bin/ipacm
-    class main
-    user radio
-    group radio inet
-    writepid /dev/cpuset/system-background/tasks
-
-service vendor.dataqti /vendor/bin/qti
-    class main
-    user radio
-    group radio oem_2901 diag usb
     writepid /dev/cpuset/system-background/tasks
 
 service vendor.sensors /vendor/bin/sensors.qti
@@ -509,12 +480,6 @@ service ril-daemon2 /vendor/bin/hw/rild -c 2
 
 service vendor.qseecomd /vendor/bin/qseecomd
     class core
-    user root
-    group root
-    writepid /dev/cpuset/system-background/tasks
-
-service time_daemon /vendor/bin/time_daemon
-    class main
     user root
     group root
     writepid /dev/cpuset/system-background/tasks
