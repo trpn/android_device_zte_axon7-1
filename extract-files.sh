@@ -106,4 +106,7 @@ patchelf --replace-needed android.hardware.gnss@1.0.so android.hardware.gnss@1.0
 CAMERA_SHIM="$BLOB_ROOT"/vendor/lib/libFNVfbEngineHAL.so
 patchelf --add-needed libshim_camera.so "$CAMERA_SHIM"
 
+patchelf --set-soname "vulkan.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib/hw/vulkan.msm8996.so
+patchelf --set-soname "vulkan.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib64/hw/vulkan.msm8996.so
+
 "$MY_DIR"/setup-makefiles.sh
