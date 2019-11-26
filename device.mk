@@ -249,9 +249,9 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system
 
-# IMS
+# IMS Shim
 PRODUCT_PACKAGES += \
-    ims-ext-common
+    libbase_shim
 
 # IPA Manager
 PRODUCT_PACKAGES += \
@@ -380,8 +380,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl \
+    libhtcril_db \
     libprotobuf-cpp-full \
-    android.hardware.secure_element@1.0 \
     librmnetctl \
     libxml2
 
@@ -398,9 +399,20 @@ PRODUCT_PACKAGES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager.xml \
+    com.android.ims.rcsmanager \
+    ims-ext-common \
+    ims_ext_common.xml \
+    ims-ext-common_system \
+    telephony-ext \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
+    ims-ext-common_system \
     telephony-ext
 
 # TextClassifier
