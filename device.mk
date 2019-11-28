@@ -336,6 +336,7 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
+    libOmxG711Enc \
     libstagefrighthw
 
 # Power HAL
