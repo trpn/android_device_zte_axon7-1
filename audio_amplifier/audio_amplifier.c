@@ -19,7 +19,7 @@
 #include <cutils/properties.h>
 #include <cutils/str_parms.h>
 #include <system/audio.h>
-#include <platform.h>
+#include <msm8974/platform.h>
 
 #include <stdio.h>
 #include <stdlib.h>
