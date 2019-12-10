@@ -17,8 +17,6 @@
 */
 -->
 
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
 <resources>
-    <bool name="config_sms_force_7bit_encoding">true</bool>
+    <string name="wifi_calling_settings_title">WLAN Call</string>
 </resources>
