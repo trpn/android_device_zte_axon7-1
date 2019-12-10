@@ -1,5 +1,3 @@
-ifeq ($(BOARD_VNDK_VERSION),)
-$(warning ************* BOARD VNDK is not enabled - compiling vndk-sp ***************************)
 LOCAL_PATH := $(call my-dir)
 
 include $(LOCAL_PATH)/vndk-sp-libs.mk
@@ -42,4 +40,3 @@ LOCAL_MODULE := vndk-sp
 LOCAL_MODULE_TAGS := optional
 LOCAL_REQUIRED_MODULES := $(addsuffix .vndk-sp-gen,$(VNDK_SP_LIBRARIES))
 include $(BUILD_PHONY_PACKAGE)
-endif
