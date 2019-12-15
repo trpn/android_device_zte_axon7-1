@@ -84,6 +84,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=1 \
     vidc.debug.perf.mode=2 \
     vidc.enc.dcvs.extra-buff-count=2 \
+    media.stagefright.enable-player=true \
+    media.stagefright.enable-http=true \
+    media.stagefright.enable-aac=true \
+    media.stagefright.enable-qcp=true \
+    media.stagefright.enable-scan=true \
+    mmp.enable.3g2=true \
+    media.aac_51_output_enabled=true \
+    mm.enable.smoothstreaming=true \
+    persist.mm.enable.prefetch=true \
     vidc.enc.disable.pq=true
 
 # FRP
