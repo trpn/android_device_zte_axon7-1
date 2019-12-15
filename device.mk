@@ -260,6 +260,10 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system
 
+#IMS Shim
+PRODUCT_PACKAGES += \
+    libbase_shim
+
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \

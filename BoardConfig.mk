@@ -224,6 +224,12 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_USES_OLD_MNC_FORMAT := true
 
+
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/bin/imsrcsd|/vendor/lib64/libbase_shim.so \
+    /vendor/lib64/lib-uceservice.so|libbase_shim.so
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-07-01
 
