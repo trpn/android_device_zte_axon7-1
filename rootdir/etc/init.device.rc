@@ -34,6 +34,24 @@ on post-fs-data
     # Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
 
+    # SSC/SLPI sensors
+    #mkdir /persist/sensors
+    chown root system /persist/sensors
+    chmod 0775 /persist/sensors
+    chown root system /persist/sensors/sensors_settings
+    chmod 0664 /persist/sensors/sensors_settings
+    chown root system /persist/sensors/sns.reg
+    chmod 0664 /persist/sensors/sns.reg
+    chown root system /persist/PRSensorData.txt
+    chmod 0660 /persist/PRSensorData.txt
+    chown root system /persist/PSensor3cm_ct.txt
+    chmod 0660 /persist/PSensor3cm_ct.txt
+
+    # /dev/sensors only supports an ioctl to get the current SLPI timestamp;
+    # allow the sensors daemon to perform this as non-root
+    chown root system /dev/sensors
+    chmod 0660 /dev/sensors
+
     # Create folder for mm-qcamera-daemon
     mkdir /data/misc/camera 0770 camera camera
     mkdir /data/vendor/camera 0770 camera camera
