@@ -123,6 +123,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
+    service.qti.ims.enabled=1 \
+    persist.dbg.wfc_avail_ovr=1 \
     persist.vendor.qti.telephony.vt_cam_interface=1
 
 # Media
@@ -177,6 +179,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ril.subscription.types=NV,RUIM \
     ro.carrier.openmarket=true \
+    telephony.lteOnCdmaDevice=1 \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.default_cdma_sub=0 \
     ro.telephony.default_network=10,10
