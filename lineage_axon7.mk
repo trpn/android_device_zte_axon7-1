@@ -22,10 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/zte/axon7/device.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Set gapps arch
-TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Set bootanimation
 TARGET_BOOT_ANIMATION_RES := 1440
@@ -34,15 +31,15 @@ TARGET_BOOT_ANIMATION_RES := 1440
 PRODUCT_NAME := aosp_axon7
 PRODUCT_DEVICE := axon7
 PRODUCT_BRAND := ZTE
-PRODUCT_MODEL := ZTE A2017X
+PRODUCT_MODEL := ZTE A2017U
 PRODUCT_MANUFACTURER := ZTE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="ailsa_ii" \
-    PRODUCT_NAME="axon7" \
-    PRIVATE_BUILD_DESC="oneplus-oneplus3 9 PKQ1.181203.001 1905251415 release-keys"
+    PRODUCT_NAME="P996A01_O" \
+    PRIVATE_BUILD_DESC="P996A01_O-user 8.0.0 OPR1.170623.032 28 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3:9/PKQ1.181203.001/1905251415:user/release-keys"
+BUILD_FINGERPRINT := "ZTE/P996A01_O/ailsa_ii:8.0.0/OPR1.170623.032/20180815.171922:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-zte
